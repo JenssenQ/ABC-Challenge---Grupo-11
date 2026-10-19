@@ -1,5 +1,16 @@
 /*roots*/
-
+:root {
+  /* Colores */
+  --color-fondo: #eef6ff;         /* fondo de la página */
+  --color-navbar-footer: #1e6fd9; /* navbar y footer (mismo color) */
+  --color-carta: #ffe08a;         /* todas las cartas */
+  /* Textos */
+  --color-texto: #1e2a4a;         /* texto sobre fondo y cartas */
+  --color-texto-claro: #ffffff;   /* tSexto sobre navbar y footer */
+ 
+  /* Fuente única */
+  --fuente: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
+}
 
 /* NAVBAR */
 nav {
