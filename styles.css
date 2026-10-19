@@ -123,6 +123,38 @@ img {
 /* FILTRAR */
 
 
+/* BOTONES */
+.botones {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.botones button {
+    background-color: var(--color-navbar-footer);
+    color: var(--color-texto-claro);
+    border: 1px solid #64748b;
+    padding: 0.75rem 1rem;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.botones button:hover {
+    filter: brightness(1.1);
+}
+
+.botones button:active {
+    transform: scale(0.97);
+}
+
+/* CLASE PARA OCULTAR TARJETAS */
+.oculta {
+    display: none;
+}
+
 /* EQUIPO DE TRABAJO */
 .footer {
     background-color: var(--color-fondo);
