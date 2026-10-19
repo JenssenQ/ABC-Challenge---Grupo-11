@@ -13,4 +13,29 @@
 /* FILTRAR */
 
 
+/* EQUIPO DE TRABAJO */
+.footer .equipo {
+  max-width: 44rem;
+  margin: 0 auto;
+  text-align: center;
+}
 
+/* LISTA DE INTEGRANTES */
+.footer .equipo-integrantes {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 1.75rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0.75rem;
+}
+
+.footer .equipo-integrantes li {
+  /* background-color: #475569; 
+  color: #ffffff;
+  border: 1px solid #64748b;
+  */
+  padding: 0.75rem 1rem;
+  border-radius: 1.25rem;
+}
