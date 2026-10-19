@@ -1,24 +1,3 @@
-
-
-
-
-//Funcion Voltear
-const contadorElemento = document.querySelector("#contador");
-const cards = document.querySelectorAll(".card");
-let letrasVistas = 0;
-function voltear(card) {
-    card.classList.toggle("volteada");
-    if (!card.classList.contains("vista")) {
-        card.classList.add("vista"); 
-        letrasVistas++;
-        contadorElemento.textContent = letrasVistas; 
-    }
-}
-cards.forEach(card => {
-    card.addEventListener("click", () => {
-        voltear(card);
-    });
-});
 /*REQUERIMIENTO 5: FILTRAR POR BOTONES */
 
 /* Seleccionamos todas las tarjetas */
@@ -63,3 +42,20 @@ botones.forEach(function (e) {
 
 /* Mostramos todas las tarjetas al iniciar la pagina*/
 filtrar("todas");
+
+//Funcion Voltear
+const contadorElemento = document.querySelector("#contador");
+let letrasVistas = 0;
+function voltear(card) {
+    card.classList.toggle("volteada");
+    if (!card.classList.contains("vista")) {
+        card.classList.add("vista"); 
+        letrasVistas++;
+        contadorElemento.textContent = letrasVistas; 
+    }
+}
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        voltear(card);
+    });
+});
