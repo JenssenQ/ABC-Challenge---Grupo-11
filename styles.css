@@ -1,31 +1,38 @@
 /*roots*/
 :root {
-  /* Colores */
-  --color-fondo: #eef6ff;         /* fondo de la página */
-  --color-navbar-footer: #1e6fd9; /* navbar y footer (mismo color) */
-  --color-carta: #ffe08a;         /* todas las cartas */
-  /* Textos */
-  --color-texto: #1e2a4a;         /* texto sobre fondo y cartas */
-  --color-texto-claro: #ffffff;   /* tSexto sobre navbar y footer */
- 
-  /* Fuente única */
-  --fuente: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
+    /* Colores */
+    --color-fondo: #eef6ff;
+    /* fondo de la página */
+    --color-navbar-footer: #1e6fd9;
+    /* navbar y footer (mismo color) */
+    --color-carta: #ffe08a;
+    /* todas las cartas */
+    /* Textos */
+    --color-texto: #1e2a4a;
+    /* texto sobre fondo y cartas */
+    --color-texto-claro: #ffffff;
+    /* tSexto sobre navbar y footer */
+
+    /* Fuente única */
+    --fuente: "Fredoka", "Trebuchet MS", system-ui, sans-serif;
 }
 
 /* NAVBAR */
 nav {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
     background: #4A90E2;
     color: white;
     padding: 15px 30px;
     border-radius: 10px;
 }
+
 nav h1 {
-    margin: 0; 
+    margin: 0;
     font-size: 28px;
 }
+
 nav p {
     margin: 0;
     font-size: 18px;
@@ -43,27 +50,35 @@ nav p {
 
 /* EQUIPO DE TRABAJO */
 .footer {
-  max-width: 44rem;
-  margin: 0 auto;
-  text-align: center;
+    background-color: var(--color-fondo);
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.footer h1,
+.footer h2,
+.footer p {
+    color: var(--color-texto);
 }
 
 /* LISTA DE INTEGRANTES */
 .footer .equipo-integrantes {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto 1.75rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  gap: 0.75rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 1.75rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.75rem;
 }
 
 .footer .equipo-integrantes li {
-  /* background-color: #475569; 
-  color: #ffffff;
-  border: 1px solid #64748b;
-  */
-  padding: 0.75rem 1rem;
-  border-radius: 1.25rem;
+    background-color: var(--color-navbar-footer);
+    color: var(--color-texto-claro);
+    border: 1px solid #64748b;
+    padding: 0.75rem 1rem;
+    border-radius: 1.25rem;
 }
